@@ -1,0 +1,63 @@
+@charset "UTF-8";
+/* CSS Document */
+* {
+    box-sizing: border-box;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: paleturquoise;
+}
+.flex-container > div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+.stack > div {
+    flex-direction: column;
+    padding: 20px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+.section_L {
+    flex-grow: 3;
+}
+.section_R {
+    flex-grow: 2;
+}
+.flex-responsive {
+    flex: 30%;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 799px) {
+#container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+.flex-responsive {
+    flex: 100%;
+}
+}
+
+/* Below are some guidelines for media queries to make your page responsive. Your breakpoints should really be based upon how your design flows - these are just starting points. Remember that you can show or remove things from a layout using display:none; in the style for the element.  Imagine that you have a different navbar for phone vs laptop and you only want it to show in one place rather than another. */
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* portrait phones */
+}
+
+@media print {
+	/*this is if you want a print version of your page. */
+}
