@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interconnectedness for All</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+      color: #333;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #ff6f61;
+      color: white;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      color: white;
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta-button {
+      padding: 0.8rem 2rem;
+      background: #ff6f61;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .cta-button:hover {
+      background: #ff3b3b;
+    }
+
+    /* Articles Section */
+    .articles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 2rem;
+      justify-content: center;
+      background: #fdfd96;
+    }
+
+    .articles article {
+      flex: 1 1 calc(25% - 1rem);
+      background: #ffdab9;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .articles h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #ff6f61;
+      color: white;
+    }
+
+    .footer img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+    }
+
+    .social-links {
+      margin-top: 1rem;
+    }
+
+    .social-links a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .articles {
+        flex-direction: column;
+      }
+
+      .articles article {
+        flex: 1 1 100%;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .cta-button {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Harmony</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <img src="images/hero.jpg.jpg" alt="Colorful hero image with people and nature" width="300" height="300">
+    <h1>Interconnectedness for All</h1>
+    <p>Join us in celebrating the harmony between people, nature, and animals.</p>
+    <button class="cta-button">Get Involved</button>
+  </section>
+
+  <section id="articles" class="articles">
+    <article>
+      <h2>Article 1</h2>
+      <p>Discover how people and nature can thrive together.</p>
+    </article>
+    <article>
+      <h2>Article 2</h2>
+      <p>Learn about the importance of biodiversity.</p>
+    </article>
+    <article>
+      <h2>Article 3</h2>
+      <p>Explore the connection between humans and animals.</p>
+    </article>
+    <article>
+      <h2>Article 4</h2>
+      <p>Find out how to live in harmony with the planet.</p>
+    </article>
+  </section>
+
+  <footer id="footer" class="footer">
+    <p>© 2025 Interconnectedness for All. All rights reserved.</p>
+    <img src="images/footer.jpg" alt="Psychedelic footer with social icons" width="358" height="360">
+    <div class="social-links">
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+    </div>
+  </footer>
+</body>
+</html>
